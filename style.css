@@ -134,7 +134,7 @@ header nav {
 
 main {
   flex: 1;
-  margin: 100px 0px;
+  margin: 40px 0px;
 }
 main #introduction h3 {
   font-weight: 300;
