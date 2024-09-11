@@ -68,25 +68,61 @@
           </div>
         </div>
         <div id="search-pelatihan">
-            <input type="text" placeholder="mau cari pelatihan apa?"/>
-            <div class="search-pelatihan--icon">
-              <img
-                src="/assets/icons/search-icon.png"
-                alt="icon-search"
-                id="btn-search"
-                width="32"
-                height="32"
+          <input type="text" placeholder="mau cari pelatihan apa?" />
+          <div class="search-pelatihan--icon">
+            <img
+              src="/assets/icons/search-icon.png"
+              alt="icon-search"
+              id="btn-search"
+              width="32"
+              height="32"
+            />
+          </div>
+        </div>
+        <div id="data-pelatihan">
+          <div
+            id="data-pelatihan--filter-mobile"
+            class="data-pelatihan--filter-mobile"
+          >
+          </div>
+          <div id="data-pelatihan--filter" class="data-pelatihan--filter"></div>
+          <div id="data-pelatihan--card" class="data-pelatihan--card"></div>
+        </div>
+        <div id="list-filter">
+          <div class="list-filter-header">
+            <h4>Tingkat</h4>
+             <img
+                class="close"
+                src="/assets/icons/cancel-light.png"
+                alt="close"
+                height="40"
+                width="40"
               />
+          </div>
+          <div class="list-level--data-text">
+            <div class="list-level--data">
+              <input type="checkbox" name="${el.value}" value="${el.value}" />
+              <div class="list-level--data-text">
+                <h5>Pemula</h5>
+              </div>
             </div>
-         </div>
-         <div id="data-pelatihan">
-            <div id="data-pelatihan--filter" class="data-pelatihan--filter">
+             <div class="list-level--data">
+              <input type="checkbox" name="${el.value}" value="${el.value}" />
+              <div class="list-level--data-text">
+                <h5>Mahir</h5>
+              </div>
             </div>
-          <div id="data-pelatihan--card" class="data-pelatihan--card">
-
-
-             </div>
-         </div>
+            <div class="list-level--data">
+              <input type="checkbox" name="${el.value}" value="${el.value}" />
+              <div class="list-level--data-text">
+                <h5>Mahir</h5>
+              </div>
+            </div>
+          </div>
+          <div class="list-filter-bottom">
+            <h5>Terapkan Filter</h5>
+          </div>
+        </div>
       </main>
       <footer>
         <h5>@2024 beautypreneur</h5>
