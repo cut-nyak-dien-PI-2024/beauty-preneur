@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.payment-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.customer-info, .order-summary {
+    background-color: #fff3f3;
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#name {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#whatsapp {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #e91e63;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d81b60;
+}
+
+.order-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.order-summary img {
+    width: 150px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.item-quantity {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+   
+}
+.order-sub{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 100%;
+}
+
+input[type="text"] {
+    margin-bottom: 0;
+}
+
+.order-sub p{
+    display: flex;
+    justify-content: space-between;
+}
+.product-name{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.price, .quantity, .subtotal {
+    margin: 0;
+    font-size: 14px;
+}
+.price {
+    color: #333;
+}
+.quantity {
+    color: #666;
+}
+.subtotal {
+    color: #e91e63;
+    font-weight: bold;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.total {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #e91e63;
+}
+.delete-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    color: #e91e63;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.delete-icon:hover {
+    color: #ff5252;
+}
+input::placeholder {
+    color: rgba(243, 185, 185, 0.606); /* Ubah nilai rgba sesuai dengan warna dan transparansi yang diinginkan */
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Pembayaran</title>
+    <link rel="stylesheet" href="payment3.css">
+</head>
+<body>
+
+    <div class="confirmation-container">
+        <div class="header">
+            <p>Konfirmasi Pembayaran</p>
+            <button class="whatsapp-button">Konfirmasi Pembayaran Via Whatsapp</button>
+        </div>
+
+        <div class="form-container">
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="invoice-number">Nomor Invoice</label>
+                    <input type="text" id="invoice-number" value="BeautyPreneur0000000" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label for="payment-date">Waktu Pembayaran</label>
+                    <input type="date" id="payment-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="transfer-to">Ditransfer Ke</label>
+                    <select id="transfer-to" required>
+                        <option value="BRI - Uci Chatrinada">BRI - 000 - Uci Chatrinada</option>
+                        <option value="Mandiri - Windi Al Azmi">Mandiri - 000 - Windi Al Azmi</option>
+                        <option value="BTPN - Erwiana Anggriani">BTPN - Erwiana Anggriani</option>
+                        <option value="BNI - Sabrina Natasya Bilbina">BNI - Sabrina Natasya Bilbina</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bank-name">Bank Asal</label>
+                    <input type="text" id="bank-name" placeholder="Contoh: Mandiri" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="account-name">Nama Pemilik Rekening</label>
+                    <input type="text" id="account-name" placeholder="Nama Pemilik Rekening" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="amount">Jumlah</label>
+                    <input type="text" id="amount" value="Rp 45.000" disabled>
+                </div>
+
+                <div class="form-group">
+                    <label for="upload-receipt">Bukti Transfer (Opsional)</label>
+                    <input type="file" id="upload-receipt">
+                </div>
+
+                <button type="submit" class="submit-btn">Konfirmasi</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="payment1.js"></script>
+</body>
+</html>
