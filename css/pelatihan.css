@@ -1,0 +1,237 @@
+.container {
+	border: unset;
+	min-height: unset;
+}
+
+#training {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+}
+
+#training .training__header {
+	background-color: #FFF2EE;
+	display: flex;
+	justify-content: space-around;
+	padding: 32px;
+	flex-direction: row-reverse;
+}
+
+
+#training .training__title {
+	margin-bottom: 33px;
+}
+
+#training .training__desc {
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+}
+
+#training .training__price {
+	color: #EB395F;
+	margin: 0 5px;
+	font-weight: bolder;
+}
+
+#training .training__price.training__price--cross {
+	text-decoration: line-through;
+	color: inherit;
+}
+
+#training .training__register-button {	
+	padding: 9px 80px;
+	text-align: center;
+	background-color: #EB395F;
+	border: none;
+	align-self: flex-start;
+}
+
+#training .training__register-button:hover {
+	background-color: #d33355;
+}
+
+
+#training .training__register-button:focus {
+	background-color: #bc2d4c;
+}
+
+
+#training .training__body {
+	display: flex;
+	justify-content: space-around;
+	padding: 32px;
+}
+
+#training .training__tabs {
+	margin-right: 50px;
+}
+
+#training .training__tabs-tabs {
+	margin-bottom: 40px;
+	justify-content: space-around;
+	border-bottom: 1px solid black;
+}
+
+#training .training__tabs-tabs .nav-link {
+	border: none;
+	border-radius: 0;
+	color: inherit;
+}
+#training .training__tabs-tabs .nav-link.active {
+	border-bottom: 1.5px solid #EB395F;
+	font-weight: bolder;
+}
+
+
+
+#training .training__tabs-content {
+	line-height: normal;
+}
+
+#training .training__info-card {
+	background: #FFF2EE;
+	padding: 34px;
+	border-radius: 15px;
+	align-self: flex-end;
+}
+
+#training .training__mentor-card {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+#training .training__mentor-card .container {
+	min-height: unset;
+}
+
+
+#training .training__mentor-pic {
+	margin-right: 35px;
+	border-radius: 100%;
+}
+
+#training .training__mentor-name {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#training .training__level-info {
+	margin: 15px 0px;
+}
+
+#training .training__level-label {
+
+}
+
+#training .training__level-value {
+	font-size: small;
+}
+
+#training .training__footer {
+}
+
+
+
+.suggestion-cards {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	padding: 30px 0;
+}
+
+.suggestion-card {
+	width: 20vw;
+	margin-right: 30px;
+	display: inline-block;
+	color: unset;
+	text-decoration: none;
+	white-space: wrap;
+}
+
+.suggestion-card__title {
+	padding-top: 10px;
+	font-weight: bolder;
+}
+
+.suggestion-card__trainer-name {
+	padding-bottom: 20px;
+}
+
+.suggestion-card__price {
+	margin-bottom: 10px;
+}
+
+.suggestion-card__price-cross {
+	text-decoration: line-through;
+	color: inherit;
+}
+
+.suggestion-card__price-actual {
+	color: #EB395F;
+}
+
+.suggestion-card__label {
+	text-align: center;
+	background-color: #EB395F;
+	border: none;
+	align-self: flex-start;
+	cursor: pointer;
+}
+
+.suggestion-card__label:hover,
+.suggestion-card__label:focus {
+	background-color: #EB395F;
+}
+
+
+
+/* Tablet */
+@media (max-width: 768px) {
+	#training .training__mentor-pic {
+		margin-bottom: 15px;
+		margin-right: 0;
+	}
+
+	#training .training__body {
+		padding: 30px 0px;
+	}
+
+	#training .training__body > .container {
+		margin: 0;
+		padding: 0;
+	}
+
+	#training .training__info-card {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+/* Mobile */
+@media (max-width: 576px) {
+	#training .training__header {
+		flex-direction: column;
+	}
+
+	#training .training__image {
+	}
+
+	#training .training__desc {
+		margin-top: 30px;
+	}
+
+	#training .training__body {
+		padding: 30px 0px;
+	}
+
+	#training .training__tabs {
+		margin: 0;
+		margin-bottom: 40px;
+	}
+
+	.suggestion-card {
+		width: 60%;
+	}
+}
