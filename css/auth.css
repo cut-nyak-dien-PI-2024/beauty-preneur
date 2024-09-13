@@ -1,0 +1,83 @@
+/*Reset Main Style*/
+main {
+    display: unset;
+}
+
+#auth {
+	background-image: url(../assets/images/sign-in-register-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Poppins", sans-serif;
+}
+
+#auth .auth__header {
+	text-align: center;
+	font-weight: bolder;
+	margin-bottom: 39px;
+}
+
+#auth .auth__container {
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: 20px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	margin: 100px 0px;
+	padding: 81px;
+}
+
+#auth .auth__form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#auth .auth__input {
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+#auth .auth__login-button {	
+	padding: 9px 80px;
+	text-align: center;
+	background-color: #EB395F;
+	border: none;
+}
+
+#auth .auth__login-button:hover {
+	background-color: #d33355;
+}
+
+
+#auth .auth__login-button:focus {
+	background-color: #bc2d4c;
+}
+
+
+#auth .auth__cta {
+	text-decoration: underline;
+}
+
+#auth .auth__cta.auth__cta--small {
+	font-size: 0.8rem !important;
+}
+
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+	#auth .auth__container {
+		padding: 65px;
+	}
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 576px) {
+	#auth .auth__container {
+		padding: 20px;
+	}
+}
