@@ -18,4 +18,34 @@ trashIcons.forEach(icon => {
         orderItem.remove();  // Remove the entire order item
     });
 });
+//function untuk menghitung dan update total
+function updateTotal(){
+    //Get All Order Items
+    const items=document.querySelectorAll(`.order-item`);
+    //initialize total
+    let total=0;
+    items.forEach(item=>{
+        //Get the price, quantity, and subtotal untuk item yang ada
+        const priceText =  item.querySelector(`.item-quantity`).children[0].textContent.trim();
+        const quantityText = item.querySelector(`.item-quantity`).children[1].textContent.trim();
+        const subtotalText =  item.querySelector(`.item-quantity`).textContent.trim();
 
+        //Remove `RP` and Convert to Number
+        const price = parseInt(priceText.replace(`Rp `,``).replace(`.`,``));
+        const quantity = parseInt(quantityText.replace(`x`).trim());
+        const subtotal=parseInt(subtotalText.replace(`Rp `,``).replace(`.`,``));
+
+        //check apakah subtotal sama dengan kalkulator value
+        const calculatedSubtotal=price*quantity;
+        if (calculatedSubtotal !== subtotal){
+            item.querySelector(`#subtotal`).textContent = `Rp $calculatedSubtotal.toLocaleString()}`;
+        }
+        //add to total
+        total += calculatedSubtotal;
+    });
+    //update total di summary
+    document.querySelector(`#subtotal`).textContent=`Rp ${total.toLocaleString()}`
+    document.querySelector(`.total`).textContent = `Total: Rp ${total.toLocaleString()}`
+}
+//call the function to update total
+updateTotal();
