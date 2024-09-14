@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     background-color: white;
     padding: 20px;
@@ -61,18 +61,11 @@ input[type="text"], input[type="email"] {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-#name {
+
+#name, #whatsapp {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#whatsapp {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -119,47 +112,52 @@ button:hover {
     width: 100%;
     padding-top: 20px;
     padding-bottom: 5px;
-   
 }
-.order-sub{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   width: 100%;
+
+.order-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 
 input[type="text"] {
     margin-bottom: 0;
 }
 
-.order-sub p{
+.order-sub p {
     display: flex;
     justify-content: space-between;
 }
-.product-name{
+
+.product-name {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 15px;
 }
+
 .price, .quantity, .subtotal {
     margin: 0;
     font-size: 14px;
 }
+
 .price {
     color: #333;
 }
+
 .quantity {
     color: #666;
 }
+
 .subtotal {
     color: #e91e63;
     font-weight: bold;
 }
+
 label {
     display: block;
     margin-bottom: 10px;
 }
-
 
 .total {
     font-size: 16px;
@@ -167,6 +165,7 @@ label {
     margin-top: 20px;
     color: #e91e63;
 }
+
 .delete-icon {
     position: absolute;
     top: 0;
@@ -180,6 +179,53 @@ label {
 .delete-icon:hover {
     color: #ff5252;
 }
+
 input::placeholder {
-    color: rgba(243, 185, 185, 0.606); /* Ubah nilai rgba sesuai dengan warna dan transparansi yang diinginkan */
+    color: rgba(243, 185, 185, 0.606);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .customer-info, .order-summary {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .order-summary img {
+        width: 100px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .order-summary img {
+        width: 80px;
+        height: 50px;
+    }
 }
