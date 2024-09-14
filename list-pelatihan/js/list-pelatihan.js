@@ -169,11 +169,11 @@ const apiFirstFetch = (data) => {
                 <div class="data-pelatihan--card-item--time">
                   <div class="data-pelatihan--card-item--calender">
                     <img class="calender" src="/assets/icons/calendar.png" alt="calender"  />
-                     <h5>${el.duration}</h5>
+                     <h5>${el.duration?.date}</h5>
                   </div>
                    <div class="data-pelatihan--card-item--clock">
                     <img class="clock" src="/assets/icons/clock.png" alt="clock"  />
-                     <h5>${el.duration}</h5>
+                     <h5>${el.duration?.time}</h5>
                   </div>
                </div>
                <div class="data-pelatihan--card-item--mentor">
@@ -221,11 +221,11 @@ const apiFilterData = (data) => {
                 <div class="data-pelatihan--card-item--time">
                   <div class="data-pelatihan--card-item--calender">
                     <img class="calender" src="/assets/icons/calendar.png" alt="calender"  />
-                     <h5>${el.duration}</h5>
+                     <h5>${el.duration?.date}</h5>
                   </div>
                    <div class="data-pelatihan--card-item--clock">
                     <img class="clock" src="/assets/icons/clock.png" alt="clock"  />
-                     <h5>${el.duration}</h5>
+                     <h5>${el.duration?.time}</h5>
                   </div>
                </div>
                <div class="data-pelatihan--card-item--mentor">
