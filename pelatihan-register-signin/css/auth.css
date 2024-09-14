@@ -57,6 +57,9 @@ main {
 	background-color: #bc2d4c;
 }
 
+.auth__input::placeholder {
+    color:rgba(243, 185, 185, 0.606); /* Mengatur warna dan transparansi */
+}
 
 #auth .auth__cta {
 	text-decoration: underline;

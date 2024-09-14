@@ -1,5 +1,7 @@
+//add event listener submit
 document.getElementById("payment-form").addEventListener("submit", function(event) {
     event.preventDefault();
+    //ambil data dari form
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const whatsapp = document.getElementById("whatsapp").value;
@@ -49,3 +51,43 @@ function updateTotal(){
 }
 //call the function to update total
 updateTotal();
+document.addEventListener('DOMContentLoaded', function() {
+    const user = JSON.parse(localStorage.getItem('user'));
+
+   /* // Jika pengguna sudah login, isi otomatis form customer info
+    if (user) {
+        document.getElementById('nama').value = user.nama;
+        document.getElementById('email').value = user.email;
+        document.getElementById('whatsapp').value = user.whatsapp || '';
+    }
+});*/
+
+
+// Jika data user ada, masukkan ke dalam form
+if (user) {
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const whatsappInput = document.getElementById('whatsapp');
+
+    console.log("Elemen Input:", nameInput, emailInput, whatsappInput); // Untuk debugging
+
+    // Pastikan elemen input ditemukan
+    if (nameInput && emailInput && whatsappInput) {
+        nameInput.value = user.nama || '';
+        emailInput.value = user.email || '';
+        whatsappInput.value = user.whatsapp || '';
+    } else {
+        console.error("Salah satu elemen input tidak ditemukan!");
+    }
+} else {
+    console.error("Tidak ada data user di localStorage!");
+}
+
+
+    // Lanjutkan proses pembelian, ambil data dari form atau localStorage
+    const nama = document.getElementById('nama').value;
+    const email = document.getElementById('email').value;
+    const whatsapp = document.getElementById('whatsapp').value;
+
+    alert(`Terima kasih, ${nama}. Pesanan Anda akan segera diproses!`);
+});
