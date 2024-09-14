@@ -64,4 +64,26 @@ function scrollActive() {
 
 window.addEventListener('scroll', scrollActive);
 
-~
+/*=============== SHOW SCROLL UP ===============*/
+function scrollUP() {
+  const scrollUp = document.getElementById('scroll-up');
+
+  if (window.scrollY >= 350) {
+      scrollUp.classList.add('show-scroll');
+  } else {
+      scrollUp.classList.remove('show-scroll');
+  }
+}
+
+window.addEventListener('scroll', scrollUP);
+
+const scrollUpButton = document.getElementById('scroll-up');
+scrollUpButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+});
+
+
