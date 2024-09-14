@@ -10,7 +10,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Ganti height dengan min-height */
+    padding: 20px;
 }
 
 .confirmation-container {
@@ -79,4 +80,46 @@ input[type="file"] {
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .confirmation-container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .header p {
+        font-size: 18px;
+    }
+
+    .whatsapp-button, .submit-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .confirmation-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    .whatsapp-button, .submit-btn {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    input, select {
+        font-size: 12px;
+        padding: 8px;
+    }
 }
