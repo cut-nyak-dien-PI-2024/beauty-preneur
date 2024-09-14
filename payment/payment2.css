@@ -10,7 +10,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Ubah dari height: 100vh menjadi min-height */
+    padding: 20px;
 }
 
 .invoice-container {
@@ -119,9 +120,68 @@ strong {
     font-weight: bold;
     color: #333;
 }
+
 .total {
     font-size: 16px;
     font-weight: bold;
     margin-top: 20px;
     color: #e91e63;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .invoice-container {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .product-info img {
+        width: 120px;
+        height: 60px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .invoice-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .product-info {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .product-info img {
+        width: 100px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .product-info div {
+        text-align: left;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px;
+    }
 }
