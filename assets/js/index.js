@@ -67,4 +67,26 @@ scrollUpButton.addEventListener('click', (event) => {
   });
 });
 
+/*=============== FETCH API ===============*/
+const url = `https://api.mockfly.dev/mocks/74037101-b7cd-43f3-846a-7a1e87ad952f/pelatihan`;
 
+/*=============== First Load, We hit api ===============*/
+const hitAPI = async (data) => {
+  let { isData, isError, isLoading } = data;
+
+  try {
+    setTimeout(() => {
+      isLoading = true;
+    }, 1000);
+
+    const getAPI = await fetch(url);
+    if (getAPI.statys !== 200) getErrorComponent();
+    const getJSON = await getAPI.json();
+    isLoading = false; 
+    isData = getJSON.data;
+
+    return { isData, isLoading };
+    } catch (err) {
+      return getErrorComponent();
+    }
+  };
