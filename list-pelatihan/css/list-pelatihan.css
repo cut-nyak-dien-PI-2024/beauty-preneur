@@ -12,6 +12,18 @@ main {
 }
 
 
+#error, #loading {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:400px;
+    width:100%;
+    font-size:20px;
+    text-align:center;
+}
+
+
   #list-filter {
         display:none;
   }
@@ -115,9 +127,7 @@ main {
      flex-direction:row;
      justify-content:start;
      align-items:center;
-     gap:0px;
      text-align:center;
-
 }
 
 
@@ -130,12 +140,16 @@ main {
 
 .list-level--data-text h5 {
     line-height:var(--line-height-text);
-    font-size:18px;
-
+    font-size:14px;
+    padding-top:5px;
 }
 
-.list-level--data-text {
-    padding-top:5px;
+.list-level--data-container {
+    display:flex;
+    flex-direction:column;
+    gap:1px !important;
+    /* height:400px; */
+    gap:0px;
 }
 
 
@@ -406,10 +420,10 @@ main {
     display:flex;
     flex-direction:column;
     justify-content:space-around;
-
+    gap:8px;
     padding:30px 20px;
     border:1px solid lightgrey;
-    height:280px;
+    max-height:450px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     
@@ -423,11 +437,15 @@ main {
     height:30px;
  }
 
+.list-filter-header h4{
+ font-size:20px !important;
+
+}
  .list-filter-bottom {
     width:100%;
     background:var(--base-pink);
     color:white;
-    padding:10px;
+    padding:8px;
     border-radius:10px;
     text-align:center;
  }
@@ -435,6 +453,7 @@ main {
 
   .list-filter-bottom h5{
     margin:10px 0px;
+    font-size:12px;
   }
 
     .data-pelatihan--card-item { 

@@ -16,8 +16,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/css/list-pelatihan.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/list-pelatihan/css/list-pelatihan.css" />
   </head>
   <body>
     <div class="container">
@@ -68,7 +68,7 @@
           </div>
         </div>
         <div id="search-pelatihan">
-          <input type="text" placeholder="mau cari pelatihan apa?" />
+          <input type="text" id="cari-pelatihan" placeholder="mau cari pelatihan apa?" />
           <div class="search-pelatihan--icon">
             <img
               src="/assets/icons/search-icon.png"
@@ -88,41 +88,6 @@
           <div id="data-pelatihan--filter" class="data-pelatihan--filter"></div>
           <div id="data-pelatihan--card" class="data-pelatihan--card"></div>
         </div>
-        <div id="list-filter">
-          <div class="list-filter-header">
-            <h4>Tingkat</h4>
-             <img
-                class="close"
-                src="/assets/icons/cancel-light.png"
-                alt="close"
-                height="40"
-                width="40"
-              />
-          </div>
-          <div class="list-level--data-text">
-            <div class="list-level--data">
-              <input type="checkbox" name="${el.value}" value="${el.value}" />
-              <div class="list-level--data-text">
-                <h5>Pemula</h5>
-              </div>
-            </div>
-             <div class="list-level--data">
-              <input type="checkbox" name="${el.value}" value="${el.value}" />
-              <div class="list-level--data-text">
-                <h5>Mahir</h5>
-              </div>
-            </div>
-            <div class="list-level--data">
-              <input type="checkbox" name="${el.value}" value="${el.value}" />
-              <div class="list-level--data-text">
-                <h5>Mahir</h5>
-              </div>
-            </div>
-          </div>
-          <div class="list-filter-bottom">
-            <h5>Terapkan Filter Ini</h5>
-          </div>
-        </div>
       </main>
       <footer>
         <h5>@2024 beautypreneur</h5>
@@ -133,7 +98,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="js/index.js"></script>
-    <script src="js/list-pelatihan.js"></script>
+    <script src="/list-pelatihan/js/index.js"></script>
+    <script src="/list-pelatihan/js/list-pelatihan.js"></script>
   </body>
 </html>
