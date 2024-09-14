@@ -18,7 +18,7 @@
 	  crossorigin="anonymous"
 	/>
 
-	<link rel="stylesheet" href="style.css"> 
+	<link rel="stylesheet" href="../style.css"> 
 	<link rel="stylesheet" href="css/auth.css"> 
   </head>
   <body>
@@ -53,23 +53,23 @@
 
 					<form class="auth__form" action="#" method="POST" id="register">
 						<div class="mb-3">
-							<label for="nama" class="form-label">Nama</label>
-							<input class="form-control auth__input" id="nama" type="text" name="nama">
+							<label for="nama" class="form-label">Nama *</label>
+							<input class="form-control auth__input" id="nama" type="text" name="nama" required>
 						</div>
 
 						<div class="mb-3">
-							<label for="email" class="form-label">Email</label>
-							<input class="form-control auth__input" id="email" type="email" name="email">
+							<label for="email" class="form-label">Email *</label>
+							<input class="form-control auth__input" id="email" type="email" name="email" required>
 						</div>
 
 						<div class="mb-3">
-							<label for="whatsapp" class="form-label">Nomor WhatsApp</label>
-							<input class="form-control auth__input" id="whatsapp" type="tel" name="whatsapp" pattern="[0-9]{10,13}" maxlength="13" placeholder="081234567890" required>
+							<label for="whatsapp" class="form-label">Nomor WhatsApp *</label>
+							<input class="form-control auth__input" id="whatsapp" type="tel" name="whatsapp" pattern="[0-9]{10,13}" maxlength="13" required>
 						</div>
 
 						<div class="mb-5">
-							<label for="password" class="form-label">Password</label>
-							<input class="form-control auth__input" id="password" type="password" name="password">
+							<label for="password" class="form-label">Password *</label>
+							<input class="form-control auth__input" id="password" type="password" name="password" required>
 						</div>
 
 						<input type="submit" name="submit" value="Daftar" class="btn btn-primary mb-3 auth__login-button">
@@ -92,7 +92,7 @@
 	  crossorigin="anonymous"
 	></script>
 	
-	<script src="js/index.js"></script>
+	<script src="../js/index.js"></script>
 	<script src="js/auth.js"></script>
   </body>
 </html>
