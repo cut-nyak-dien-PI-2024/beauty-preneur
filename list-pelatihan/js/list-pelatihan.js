@@ -399,9 +399,7 @@ searchLatihan.addEventListener("change", (e) => {
   let findData = getResult?.isData?.filter((item) =>
     item.title.toLowerCase().includes(e.target.value.toLowerCase())
   );
-  if (findData.length === 0) {
-    getErrorComponent();
-  }
+
   apiFilterData(findData); //put data on component
 });
 
