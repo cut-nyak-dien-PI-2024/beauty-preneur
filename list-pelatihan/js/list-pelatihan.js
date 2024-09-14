@@ -390,17 +390,27 @@ const getCheckValueFilter = (data) => {
 //20. call logic filter :D
 getCheckValueFilter();
 
-//21. logic for search
-let searchLatihan = document.getElementById("cari-pelatihan");
-searchLatihan.addEventListener("change", (e) => {
-  e.preventDefault();
-  //22. search based on data when first load
+
+const resultSearch = (e) =>{
   if (getResult.isData === undefined) getErrorComponent();
   let findData = getResult?.isData?.filter((item) =>
     item.title.toLowerCase().includes(e.target.value.toLowerCase())
   );
 
   apiFilterData(findData); //put data on component
+}
+
+
+//21. logic for search
+let debounceTimer;
+let searchLatihan = document.getElementById("cari-pelatihan");
+searchLatihan.addEventListener("input", (e) => {
+  //22. search based on data when first load
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => {
+      resultSearch(e);
+    }, 300);
+
 });
 
 //23. error component
