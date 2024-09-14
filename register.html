@@ -51,7 +51,7 @@
 				<div class="auth__container">
 					<h5 class="auth__header">Buat Akun</h5>
 
-					<form class="auth__form" action="#" method="POST">
+					<form class="auth__form" action="#" method="POST" id="register">
 						<div class="mb-3">
 							<label for="nama" class="form-label">Nama</label>
 							<input class="form-control auth__input" id="nama" type="text" name="nama">
@@ -60,6 +60,11 @@
 						<div class="mb-3">
 							<label for="email" class="form-label">Email</label>
 							<input class="form-control auth__input" id="email" type="email" name="email">
+						</div>
+
+						<div class="mb-3">
+							<label for="whatsapp" class="form-label">Nomor WhatsApp</label>
+							<input class="form-control auth__input" id="whatsapp" type="tel" name="whatsapp" pattern="[0-9]{10,13}" maxlength="13" placeholder="081234567890" required>
 						</div>
 
 						<div class="mb-5">
