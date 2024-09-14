@@ -550,6 +550,94 @@ nav {
   box-shadow: 0 8px 24px hsla(228, 66%, 45%, .1);
 }
 
+/* Blog Section */
+.blog{
+  width: 100%;
+  min-height: 440px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+}
+
+
+.blog{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.blog-box{
+  background: #000;
+  box-shadow: 0 4px 14px hsl(35deg 25% 15% / 10%);
+  padding: 15px;
+  border-radius: 0.5rem;
+}
+
+.blog-img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+.blog-title{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-color);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blog-date{
+  display: flex;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-top: 4px;
+  font-weight: 400;
+  color: #EF5C7B;
+}
+
+.blog-description{
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin: 5px 0 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid var(--second-color);
+}
+
+.profile-name{
+  font-size: .8rem;
+  font-weight: 500;
+  color: #EF5C7B;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-box {
+    margin-bottom: 20px;
+  }
+}
+
 /*=============== FOOTER ===============*/
 .footer__container {
   row-gap: 2.5rem;
@@ -698,6 +786,7 @@ nav {
   bottom: 8rem;
 }
 
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width:350px) {
@@ -762,10 +851,6 @@ nav {
     height: 280px;
   }
 
-  .subscribe__container {
-    padding: 2rem 1rem;
-  }
-
   .footer__content {
     gap: 1rem;
   }
@@ -812,7 +897,6 @@ nav {
     justify-content: center;
   }
 
-  .value__container,
   .contact__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -824,10 +908,6 @@ nav {
 
   .contact__card {
     justify-content: initial;
-  }
-
-  .subscribe__container {
-    padding: 3rem 13rem;
   }
 
   .footer__container {
@@ -975,6 +1055,19 @@ nav {
     right: 3rem;
   }
 
+  .header-content{
+    margin-top: 3rem;
+}
+.btn2{
+    margin-bottom: 30px;
+}
+.post-header{
+    height: 435px;
+}
+.post-header{
+    margin-top: 9rem !important;
+}
+
   }
 }
 
@@ -987,6 +1080,10 @@ nav {
   .home__container {
     column-gap: 4rem;
   }
+
+  .box-text{
+    width: 100%
+}
 
 }
 
