@@ -3,6 +3,11 @@
 	min-height: unset;
 }
 
+body {
+	background-color: white;
+	color: unset;
+}
+
 #training {
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
@@ -14,11 +19,13 @@
 	justify-content: space-around;
 	padding: 32px;
 	flex-direction: row-reverse;
+	padding-top: 120px;
 }
 
 
 #training .training__title {
 	margin-bottom: 33px;
+	color: unset;
 }
 
 #training .training__desc {
@@ -184,6 +191,12 @@
 	background-color: #EB395F;
 }
 
+
+@media screen and (min-width: 1023px) {
+	#training .nav {
+		height: unset;
+	}
+}
 
 
 /* Tablet */
