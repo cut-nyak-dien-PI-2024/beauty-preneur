@@ -3,6 +3,11 @@ main {
     display: unset;
 }
 
+body {
+	background-color: white;
+	color: unset;
+}
+
 #auth {
 	background-image: url(../assets/images/sign-in-register-bg.jpg);
 	background-size: cover;
