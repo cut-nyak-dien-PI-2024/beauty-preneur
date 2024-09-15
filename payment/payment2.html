@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invoice</title>
-    <link rel="stylesheet" href="payment2.css">
+    <link rel="stylesheet" href="payment2.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,119 +17,164 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-      <!-- Favicon -->
-    <link rel="shortcut icon" href="/assets/image/WhatsApp Image 2024-08-20 at 03.04.08 2.png" type="image/x-icon">
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/assets/image/WhatsApp Image 2024-08-20 at 03.04.08 2.png"
+      type="image/x-icon"
+    />
 
     <!-- Boxicon -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-     <header class="header" id="header">
-        <nav class="nav container">
-            <img class="nav__logo" src="/assets/image/Logo beautypreneur.png"/>
-            
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <img
+          class="nav__logo"
+          id="nav_logo"
+          src="/assets/image/logo-brand.png"
+          width="200"
+          height="80"
+        />
 
         <div class="nav__menu">
-            <ul class="nav__list">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/index.html" class="nav__link active-link">
+                <i class="bx bx-home"></i>
+                <span>Home</span>
+              </a>
+            </li>
 
+            <li class="nav__item">
+              <a href="/list-pelatihan/list-pelatihan.html" class="nav__link">
+                <i class="bx bx-book-alt"></i>
+                <span>Kelas</span>
+              </a>
+            </li>
+            <!-- 
                 <li class="nav__item">
-                    <a href="#home" class="nav__link active-link">
-                        <i class='bx bx-home'></i>
-                        <span>Home</span>
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#popular" class="nav__link">
-                        <i class='bx bx-book-alt'></i>
-                        <span>Kelas</span>
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#blog" class="nav__link">
+                    <a href="/index.html/#blog" class="nav__link">
                         <i class='bx bxl-blogger'></i>
                         <span>Blog</span>
                     </a>
-                </li>
+                </li> -->
 
-                <li class="nav__item">
+            <!-- <li class="nav__item">
                     <a href="#popular" class="nav__link">
                         <i class='bx bxs-user-rectangle'></i>
                         <span>Kelas saya</span>
                     </a>
-                </li>
+                </li> -->
 
-                <li class="nav__item">
+            <!-- <li class="nav__item">
                     <a href="#komunitas" class="nav__link">
                         <i class='bx bx-group'></i>
                         <span>Komunitas</span>
                     </a>
-                </li>
+                </li> -->
 
-                <li class="nav__item">
-                    <a href="#masuk" class="nav__link">
-                        <i class='bx bxs-user-circle'></i>
-                        <span>Masuk</span>
-                    </a>
-                </li>
+            <li class="nav__item" id="signin">
+              <a
+                href="/pelatihan-register-signin/sign-in.html"
+                class="nav__link"
+              >
+                <i class="bx bxs-user-circle"></i>
+                <span>Masuk</span>
+              </a>
+            </li>
 
-                <li class="nav__item">
-                    <a href="#daftar" class="nav__link">
-                        <i class='bx bx-brush'></i>
-                        <span>Daftar</span>
-                    </a>
-                </li>
-            </ul>
+            <li class="nav__item" id="signup">
+              <a
+                href="/pelatihan-register-signin/register.html"
+                class="nav__link"
+              >
+                <i class="bx bx-brush"></i>
+                <span>Daftar</span>
+              </a>
+            </li>
+
+            <li class="nav__item" id="exit">
+              <a
+                href="/pelatihan-register-signin/sign-in.html"
+                class="nav__link"
+              >
+                <i class="bx bxs-user-circle"></i>
+                <span>Keluar</span>
+              </a>
+            </li>
+          </ul>
         </div>
-    </nav>
-     </header>
+      </nav>
+    </header>
 
-     <main>
-        <div class="invoice-container">
+    <main>
+      <div class="invoice-container">
         <div class="headerInvoice">
-            <p>Setelah melakukan pembayaran, Admin kami akan SEGERA menghubungi (2 X 24 JAM KERJA)</p>
+          <p>
+            Setelah melakukan pembayaran, Admin kami akan SEGERA menghubungi (2
+            X 24 JAM KERJA)
+          </p>
         </div>
 
         <div class="invoice-details">
-            <h2>Invoice BeautyPreneur0000000</h2>
-            <div class="product-info">
-                <img src="img/make-up-sklh.png" alt="Makeup Simple Sekolah" />
-                <div>
-                    <p class="product-name">Makeup Simple Sekolah</p>
-                    <p class="product-price">Rp 45.000</p>
-                    <p class="product-qty">1x</p>
-                </div>
+          <h2>Invoice BeautyPreneur0000000</h2>
+          <div class="product-info">
+            <img src="img/make-up-sklh.png" alt="Makeup Simple Sekolah" />
+            <div>
+              <p class="product-name">Makeup Simple Sekolah</p>
+              <p class="product-price">Rp 45.000</p>
+              <p class="product-qty">1x</p>
             </div>
-            <div class="pricing">
-                <p>Subtotal <span>Rp 45.000</span></p>
-                <p>Diskon <span>-</span></p>
-                <p class="total">Total <span>Rp 45.000</span></p>
-            </div>
-            <div class="buttons">
-                <button id="back-btn">Kembali</button>
-                <button id="confirm-btn">Konfirmasi Pesanan</button>
-            </div>
+          </div>
+          <div class="pricing">
+            <p>Subtotal <span>Rp 45.000</span></p>
+            <p>Diskon <span>-</span></p>
+            <p class="total">Total <span>Rp 45.000</span></p>
+          </div>
+          <div class="buttons">
+            <button id="back-btn">Kembali</button>
+            <button id="confirm-btn">Konfirmasi Pesanan</button>
+          </div>
         </div>
 
         <div class="payment-info">
-            <h3>Selangkah Lagi!</h3>
-            <p>1. TRANSFER VIA beberapa opsi pembayaran di bawah ini :</p>
-            <ul>
-                <li><strong>BRI</strong> no rek 3170-01-001379-50-5 a/n UCI CHATRINADA SH</li>
-                <li><strong>MANDIRI</strong> no rek 0000000000 a/n Windi Al Azmi</li>
-                <li><strong>BTPN</strong> no rek 90011192933 a/n Erwiana Anggriani</li>
-                <li><strong>BNI</strong> no rek 1387505038 a/n Sabrina Natasya Bilbina</li>
-            </ul>
-            <p>2. Setelah melakukan transfer, tekan tombol KONFIRMASI PEMBAYARAN disertai dengan upload bukti pembayaran atau kirim bukti transfer ke WA.</p>
-            <p><strong>WA: 082-5939-6969</strong> (WA Only, tidak dapat di telepon)</p>
+          <h3>Selangkah Lagi!</h3>
+          <p>1. TRANSFER VIA beberapa opsi pembayaran di bawah ini :</p>
+          <ul>
+            <li>
+              <strong>BRI</strong> no rek 3170-01-001379-50-5 a/n UCI CHATRINADA
+              SH
+            </li>
+            <li>
+              <strong>MANDIRI</strong> no rek 0000000000 a/n Windi Al Azmi
+            </li>
+            <li>
+              <strong>BTPN</strong> no rek 90011192933 a/n Erwiana Anggriani
+            </li>
+            <li>
+              <strong>BNI</strong> no rek 1387505038 a/n Sabrina Natasya Bilbina
+            </li>
+          </ul>
+          <p>
+            2. Setelah melakukan transfer, tekan tombol KONFIRMASI PEMBAYARAN
+            disertai dengan upload bukti pembayaran atau kirim bukti transfer ke
+            WA.
+          </p>
+          <p>
+            <strong>WA: 082-5939-6969</strong> (WA Only, tidak dapat di telepon)
+          </p>
         </div>
-    </div>
-     </main>
-       <footer class="footer section">
-        <div class="footer__container container">
-            <!-- <div class="links__intro">
+      </div>
+    </main>
+    <footer class="footer section">
+      <div class="footer__container container">
+        <!-- <div class="links__intro">
                 <a href="" class="footer__logo">
                     <i class='bx bxs-building-house bx-flashing' ></i>
                 </a>
@@ -138,106 +183,103 @@
                 </p>
             </div> -->
 
-            <div class="footer__content">
+        <div class="footer__content">
+          <div>
+            <h3 class="footer__title">BeautyPreneur</h3>
 
-                <div>
-                    <h3 class="footer__title">
-                        BeautyPreneur
-                    </h3>
+            <ul class="footer__links">
+              <li>
+                <a href="#tentangkami" class="footer__link popup-enabled"
+                  >Tentang Kami</a
+                >
+              </li>
 
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#tentangkami" class="footer__link popup-enabled">Tentang Kami</a>
-                        </li>
-
-                        <li>
-                            <a href="hubungikami" class="footer__link popup-enabled">Hubungi Kami</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Calon MUA
-                    </h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#blog" class="footer__link popup-enabled">Blog</a>
-                        </li>
-
-                        <li>
-                            <a href="#komunitas" class="footer__link popup-enabled">Komunitas</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer__title">
-                        Bisnis
-                    </h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#mitra" class="footer__link popup-enabled">Bergabung Sebagai Mitra</a>
-                        </li>
-
-                        <li>
-                            <a href="#beautyPreneurPro" class="footer__link popup-enabled">BeautyPreneur Pro</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="social">
-            <h3 class="footer__title">
-                Follow us
-            </h3>
-
-            <ul class="footer__social">
-                <a href="" class="footer__social-link popup-enabled" target="_blank">
-                    <i class='bx bxl-twitter'></i>
-                </a>
-                <a href="" class="footer__social-link popup-enabled" target="_blank">
-                    <i class='bx bxl-facebook-circle'></i>
-                </a>
-                <a href="" class="footer__social-link popup-enabled" target="_blank">
-                    <i class='bx bxl-pinterest'></i>
-                </a>
-                <a href="" class="footer__social-link popup-enabled" target="_blank">
-                    <i class='bx bxl-instagram-alt'></i>
-                </a>
+              <li>
+                <a href="hubungikami" class="footer__link popup-enabled"
+                  >Hubungi Kami</a
+                >
+              </li>
             </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Calon MUA</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#blog" class="footer__link popup-enabled">Blog</a>
+              </li>
+
+              <li>
+                <a href="#komunitas" class="footer__link popup-enabled"
+                  >Komunitas</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__title">Bisnis</h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#mitra" class="footer__link popup-enabled"
+                  >Bergabung Sebagai Mitra</a
+                >
+              </li>
+
+              <li>
+                <a href="#beautyPreneurPro" class="footer__link popup-enabled"
+                  >BeautyPreneur Pro</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        <div class="footer__info container">
-            <span class="footer__copy">
-                Copyright @2024  BeautyPreneur All Rights Reserved 
-            </span>
+      <div class="social">
+        <h3 class="footer__title">Follow us</h3>
 
-            <div class="footer__privacy">
-                <a href="#" class='popup-enabled'>Terms & conditions</a>
-                <a href="#" class='popup-enabled'>Privacy Policy</a>
-            </div>
+        <ul class="footer__social">
+          <a href="" class="footer__social-link popup-enabled" target="_blank">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="" class="footer__social-link popup-enabled" target="_blank">
+            <i class="bx bxl-facebook-circle"></i>
+          </a>
+          <a href="" class="footer__social-link popup-enabled" target="_blank">
+            <i class="bx bxl-pinterest"></i>
+          </a>
+          <a href="" class="footer__social-link popup-enabled" target="_blank">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+        </ul>
+      </div>
+
+      <div class="footer__info container">
+        <span class="footer__copy">
+          Copyright @2024 BeautyPreneur All Rights Reserved
+        </span>
+
+        <div class="footer__privacy">
+          <a href="#" class="popup-enabled">Terms & conditions</a>
+          <a href="#" class="popup-enabled">Privacy Policy</a>
         </div>
-
+      </div>
     </footer>
     <!-- <div class="container"> -->
-        <!--========== SCROLL UP ==========-->
+    <!--========== SCROLL UP ==========-->
     <a href="#home" class="scrollup" id="scroll-up">
-        <i class='bx bx-chevrons-up'></i>
+      <i class="bx bx-chevrons-up"></i>
     </a>
 
-     <!--=============== SCROLLREVEAL ===============-->
-     <script src=""></script>
-
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
 
     <!-- Main JS -->
     <script src="js/index.js"></script>
-    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -245,5 +287,5 @@
     ></script>
 
     <script src="payment2.js"></script>
-</body>
+  </body>
 </html>

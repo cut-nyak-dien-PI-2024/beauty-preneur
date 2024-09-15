@@ -1,5 +1,28 @@
-//first put data filter in laptop/dekstop size
+/*=============== is User Login ?  ===============*/
 
+const userData = localStorage.getItem("user");
+let getContainerNavbar = document.getElementById("nav__list");
+let getElementExit = document.getElementById("exit");
+let getElementSignIn = document.getElementById("signin");
+let getElementSignUp = document.getElementById("signup");
+
+if (userData !== null) {
+  getElementSignIn.style.display = "none";
+  getElementSignUp.style.display = "none";
+  getElementExit.style.display = "block";
+} else {
+  getElementSignIn.style.display = "block";
+  getElementSignUp.style.display = "block";
+  getElementExit.style.display = "none";
+}
+
+getElementExit.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href = "/pelatihan-register-signin/sign-in.html";
+  localStorage.removeItem("user");
+});
+
+//first put data filter in laptop/dekstop size
 const dataFilter = [
   {
     id: 1,
@@ -119,8 +142,8 @@ const getContainerListPelatihan = document.getElementById(
 );
 
 // 2.fetch api
-// const url = `https://api.mockfly.dev/mocks/8b71d6f2-9d3a-43ed-85d5-483f9c7e2c1d/pelatihan`;
-const url = `https://api.mockfly.dev/mocks/74037101-b7cd-43f3-846a-7a1e87ad952f/pelatihan`;
+const url = `https://api.mockfly.dev/mocks/8b71d6f2-9d3a-43ed-85d5-483f9c7e2c1d/pelatihan`;
+// const url = `https://api.mockfly.dev/mocks/74037101-b7cd-43f3-846a-7a1e87ad952f/pelatihan`;
 
 //3. first load, we hit api
 const hitAPI = async (data) => {
@@ -185,6 +208,21 @@ const apiFirstFetch = (data) => {
 
     getContainerListPelatihan.appendChild(buildContainer);
   });
+
+  const navigateToDetail = () => {
+    window.location.href = "/pelatihan-register-signin/pelatihan.html";
+  };
+
+  let getElementCard = Array.from(
+    document.getElementsByClassName("data-pelatihan--card-item")
+  );
+
+
+  getElementCard.forEach((cardItem) =>
+    cardItem.addEventListener("click", () => {
+      navigateToDetail();
+    })
+  );
 };
 
 //5. component list pelatihan for filter and search
@@ -237,6 +275,21 @@ const apiFilterData = (data) => {
 
     getContainerListPelatihan.appendChild(buildContainer);
   });
+
+  const navigateToDetail = () => {
+    window.location.href = "/pelatihan-register-signin/pelatihan.html";
+  };
+
+  let getElementCard = Array.from(
+    document.getElementsByClassName("data-pelatihan--card-item")
+  );
+
+
+  getElementCard.forEach((cardItem) =>
+    cardItem.addEventListener("click", () => {
+      navigateToDetail();
+    })
+  );
 };
 
 //6. put result api in hereee
@@ -390,27 +443,24 @@ const getCheckValueFilter = (data) => {
 //20. call logic filter :D
 getCheckValueFilter();
 
-
-const resultSearch = (e) =>{
+const resultSearch = (e) => {
   if (getResult.isData === undefined) getErrorComponent();
   let findData = getResult?.isData?.filter((item) =>
     item.title.toLowerCase().includes(e.target.value.toLowerCase())
   );
 
   apiFilterData(findData); //put data on component
-}
-
+};
 
 //21. logic for search
 let debounceTimer;
 let searchLatihan = document.getElementById("cari-pelatihan");
 searchLatihan.addEventListener("input", (e) => {
   //22. search based on data when first load
-    clearTimeout(debounceTimer);
-    debounceTimer = setTimeout(() => {
-      resultSearch(e);
-    }, 300);
-
+  clearTimeout(debounceTimer);
+  debounceTimer = setTimeout(() => {
+    resultSearch(e);
+  }, 300);
 });
 
 //23. error component

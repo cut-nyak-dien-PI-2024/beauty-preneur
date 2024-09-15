@@ -1,250 +1,229 @@
-
-  :root {
-    --line-height--text : 32px;
-    --base-pink: #EB395F;
-  }
-  
+:root {
+  --line-height--text: 32px;
+  --base-pink: #eb395f;
+}
 
 main {
-    /* padding:10px !important; */
-    flex:0;
-    display:flex;
-    flex-direction:column;
-    color:black !important;
-    /* margin:80px auto !important; */
-    width:80%;
-    margin:40px auto !important;
+  /* padding:10px !important; */
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  color: black !important;
+  /* margin:80px auto !important; */
+  width: 80%;
+  margin: 40px auto !important;
 }
 
-
-#error, #loading {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    height:400px;
-    width:100%;
-    font-size:20px;
-    text-align:center;
+#error,
+#loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
 }
 
-
-  #list-filter {
-        display:none;
-  }
-
+#list-filter {
+  display: none;
+}
 
 #data-pelatihan--filter-mobile {
-    display:none;
-   position:relative;
-
+  display: none;
+  position: relative;
 }
 
-
 #banner-pelatihan {
-    width:100%;
-    margin-top:40px;
-    /* height:320px; */
-    /* background-image: url("/assets/img/banner-pelatihan-big.png");
+  width: 100%;
+  margin-top: 40px;
+  /* height:320px; */
+  /* background-image: url("/assets/img/banner-pelatihan-big.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; */
-    /* display:flex;
+  /* display:flex;
     flex-direction:row; */
-    /* justify-content:flex-start;
+  /* justify-content:flex-start;
     align-items:center; */
 }
 
-
 #text-banner-pelatihan {
-    display:flex;
-    width:80%;
-    height:200px;
-    flex-direction:column;
-    justify-content:center;
-    line-height:var(--line-height--text);
-    margin:0px 10rem 0px 0px;
+  display: flex;
+  width: 80%;
+  height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  line-height: var(--line-height--text);
+  margin: 0px 10rem 0px 0px;
 }
 
-    #search-pelatihan  {
-        margin:20px auto;
-        width:50%;
-        padding:4px 10px;
-        height:40px;
-        display:flex;
-        flex-direction:row;
-        border-radius:20px;
-        border:1px solid gray;
-        
-    }
+#search-pelatihan {
+  margin: 20px auto;
+  width: 50%;
+  padding: 4px 10px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  border: 1px solid gray;
+}
 
 #search-pelatihan input {
-    width:94%;
-    outline:none;
-    border:none;
-    background-color:transparent;
+  width: 94%;
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
 
 #search-pelatihan .search-pelatihan--icon {
-     width:6%;
-     display:flex;
-     flex-direction:row;
-     justify-content:center;
-     align-items:center;
+  width: 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #data-pelatihan {
-    display:flex;
-     flex-direction:row;
-     justify-content:space-between;
-     /* align-items:center; */
-     width:80vw;
-     padding:10px 0px;
-     gap:60px;
-    margin:20px 0px;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items:center; */
+  width: 80vw;
+  padding: 10px 0px;
+  gap: 60px;
+  margin: 20px 0px;
 }
 
 .data-pelatihan--card-detail {
-    display:flex;
-    flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 
 #data-pelatihan--filter {
   display: flex;
   flex-direction: column;
-   justify-content:start;
-   gap:20px;
-   width:20%;
-
+  justify-content: start;
+  gap: 20px;
+  width: 20%;
 }
-
-
 
 .list-level {
-   display: flex;
+  display: flex;
   flex-direction: column;
-   justify-content:start;
-
+  justify-content: start;
 }
 
-
-.list-level--data { 
-    display:flex;
-     flex-direction:row;
-     justify-content:start;
-     align-items:center;
-     text-align:center;
+.list-level--data {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
 }
 
-
-.list-level--data input { 
-    height:24px;
-    width:36px; 
-    border:1px solid black;
+.list-level--data input {
+  height: 24px;
+  width: 36px;
+  border: 1px solid black;
 }
-
 
 .list-level--data-text h5 {
-    line-height:var(--line-height-text);
-    font-size:14px;
-    padding-top:5px;
+  line-height: var(--line-height-text);
+  font-size: 14px;
+  padding-top: 5px;
 }
 
 .list-level--data-container {
-    display:flex;
-    flex-direction:column;
-    gap:1px !important;
-    /* height:400px; */
-    gap:0px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px !important;
+  /* height:400px; */
+  gap: 0px;
 }
-
 
 .data-pelatihan--card {
-    width:85%;
-    padding:10px 0px;
-    /* padding:20px 30px; */
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
-    gap:20px;
+  width: 85%;
+  padding: 10px 0px;
+  /* padding:20px 30px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  gap: 20px;
 }
 
-
-.data-pelatihan--card-item { 
-    width:23%;
-    min-height:280px;
-    /* height:280px; */
-    overflow:hidden !important;
-    display:flex;
-    flex-direction:column;
-    gap:3px;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    background-color: white;
-    padding:4px 5px;
-    border-radius:10px;
-    cursor:pointer;
-} 
-
-
-.data-pelatihan--card-item:hover{
-     transform: translateY(-10px);
-     box-shadow:  0 8px 12px rgba(0, 0, 0, 0.2);
+.data-pelatihan--card-item {
+  width: 23%;
+  min-height: 280px;
+  /* height:280px; */
+  overflow: hidden !important;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: white;
+  padding: 4px 5px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.data-pelatihan--card-item--img{ 
-    height:120px;
-    width:100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius:10px;
-    margin:1px 0px;
-} 
-
-.data-pelatihan--card-item--text  { 
-    padding:0px 10px;
-    margin-top:4px;
-    background:white;
-    width:264px;
-    overflow:hidden;
+.data-pelatihan--card-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.data-pelatihan--card-item--text h4 { 
-    font-size:18px;
-    line-height:24px;
-    font-weight:600px;
-    width:100%;
+.data-pelatihan--card-item--img {
+  height: 120px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 1px 0px;
 }
 
-
-.data-pelatihan--card-item--text .location{ 
-    font-size:14px;
-    line-height:14px;
-    color:gray;
+.data-pelatihan--card-item--text {
+  padding: 0px 10px;
+  margin-top: 4px;
+  background: white;
+  width: 264px;
+  overflow: hidden;
 }
 
-.data-pelatihan--card-item--text .price{ 
-    font-size:14px;
-    line-height:14px;
-    font-style:normal;
+.data-pelatihan--card-item--text h4 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600px;
+  width: 100%;
 }
 
+.data-pelatihan--card-item--text .location {
+  font-size: 14px;
+  line-height: 14px;
+  color: gray;
+}
 
-.data-pelatihan--card-item--mentor{
-    width:100%;
-    height:60px;
-    overflow:hidden;
-    padding:5px 10px;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:flex-start;
-    gap:15px;
+.data-pelatihan--card-item--text .price {
+  font-size: 14px;
+  line-height: 14px;
+  font-style: normal;
+}
+
+.data-pelatihan--card-item--mentor {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
 }
 
 .data-pelatihan--card-item--mentor img {
@@ -255,386 +234,349 @@ main {
 }
 
 .data-pelatihan--card-item--mentor h5 {
-     font-size:14px;
-    line-height:14px;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .data-pelatihan--card-item--label {
-    background-color:var(--base-pink);
-    width: 90px;
-    height: 30px;
-    border-radius:4px;
-    display:flex;
-    justify-content:center;
-    text-align:center;
+  background-color: var(--base-pink);
+  width: 90px;
+  height: 30px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
-
 .data-pelatihan--card-item--label h5 {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    color:white;
-    text-align:center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: white;
+  text-align: center;
 }
 
 .data-pelatihan--card-item--time {
-     display:flex;
-    flex-direction:row;
-    align-items:center;
-    aling-contents: center;
-    justify-content:flex-start;
-    overflow:hidden;
-    width:100%;
-    padding:0px 10px;
-    height:40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  aling-contents: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  width: 100%;
+  padding: 0px 10px;
+  height: 40px;
 }
 
-.data-pelatihan--card-item--calender, .data-pelatihan--card-item--clock {
-    width:50%;
-    height:100%;
-    background:white;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:flex-start;
-    gap:4px;
+.data-pelatihan--card-item--calender,
+.data-pelatihan--card-item--clock {
+  width: 50%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
 }
 
-.calender, .clock {
-    width:24px !important;
-    height:24px !important;
-    
+.calender,
+.clock {
+  width: 24px !important;
+  height: 24px !important;
 }
-.data-pelatihan--card-item--calender h5, .data-pelatihan--card-item--clock h5{
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 500;
-    text-align:center !important;
-    margin:20px 0px;
-
-
+.data-pelatihan--card-item--calender h5,
+.data-pelatihan--card-item--clock h5 {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center !important;
+  margin: 20px 0px;
 }
-
 
 @media (min-width: 1020px) and (max-width: 1170px) {
-
-        
-   #text-banner-pelatihan {
-    display:flex;
-    width:500px;
-    height:200px;
-    flex-direction:column;
-    justify-content:center;
-    line-height:var(--line-height--text);
-    margin:0px 0px 0px 0px;
-}
-
+  #text-banner-pelatihan {
+    display: flex;
+    width: 500px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    line-height: var(--line-height--text);
+    margin: 0px 0px 0px 0px;
+  }
 
   #data-pelatihan {
-     width:100%;
-     padding:0px 30px;
-}
+    width: 100%;
+    padding: 0px 30px;
+  }
 
-  .data-pelatihan--card-item   {
-         width:30%;
-
-    } 
-
+  .data-pelatihan--card-item {
+    width: 30%;
+  }
 }
 
 @media (min-width: 800px) and (max-width: 1020px) {
+  #search-pelatihan {
+    margin: 50px 40px;
+    width: 80%;
+    padding: 4px 10px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    border: 1px solid gray;
+  }
 
-    #search-pelatihan  {
-        margin:50px 40px;
-        width:80%;
-        padding:4px 10px;
-        height:40px;
-        display:flex;
-        flex-direction:row;
-        border-radius:20px;
-        border:1px solid gray;
-        
-    }
+  #search-pelatihan input {
+    width: 94%;
+    outline: none;
+    border: none;
+  }
 
-    #search-pelatihan input {
-        width:94%;
-        outline:none;
-        border:none;
-    }
-
-    .data-pelatihan--card-item--text  { 
-    padding:0px 0px;
-    }
-
+  .data-pelatihan--card-item--text {
+    padding: 0px 0px;
+  }
 
   #data-pelatihan {
-     width:100%;
-     padding:0px 30px;
-     margin-top:-20px;
-
-    }
-
-  .data-pelatihan--card-item   {
-         width:40%;
-
-    } 
-
- .data-pelatihan--card{
-     width:80%;
+    width: 100%;
+    padding: 0px 30px;
+    margin-top: -20px;
   }
-#data-pelatihan--filter {
-     width:20%;
 
-}
+  .data-pelatihan--card-item {
+    width: 40%;
+  }
 
+  .data-pelatihan--card {
+    width: 80%;
+  }
+  #data-pelatihan--filter {
+    width: 20%;
+  }
 
-    #banner-pelatihan {
-    width:100%;
+  #banner-pelatihan {
+    width: 100%;
     /* height:320px; */
-}
+  }
 
-    
-   #text-banner-pelatihan {
-    display:flex;
-    width:70%;
-    height:200px;
-    flex-direction:column;
-    justify-content:center;
-    line-height:var(--line-height--text);
-    margin:0px 0px 0px 0px;
-}
+  #text-banner-pelatihan {
+    display: flex;
+    width: 70%;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    line-height: var(--line-height--text);
+    margin: 0px 0px 0px 0px;
+  }
 
-.data-pelatihan--card-item--img{ 
-    height:145px;
-    width:100%;
-} 
-    
+  .data-pelatihan--card-item--img {
+    height: 145px;
+    width: 100%;
+  }
 }
-
 
 @media (max-width: 800px) {
-
-    #list-filter {
-    position:fixed;
-    z-index:9999;
-    width:100vw;
-    left:0;
-    right:0;
-    bottom:0;
-    background:white;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-around;
-    gap:8px;
-    padding:30px 20px;
-    border:1px solid lightgrey;
-    max-height:450px;
+  #list-filter {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 8px;
+    padding: 30px 20px;
+    border: 1px solid lightgrey;
+    max-height: 450px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    
-    
- }
-
- .list-filter-header {
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    height:30px;
- }
-
-.list-filter-header h4{
- font-size:20px !important;
-
-}
- .list-filter-bottom {
-    width:100%;
-    background:var(--base-pink);
-    color:white;
-    padding:8px;
-    border-radius:10px;
-    text-align:center;
- }
-
-
-  .list-filter-bottom h5{
-    margin:10px 0px;
-    font-size:12px;
   }
 
-    .data-pelatihan--card-item { 
-    width:100%;
-    min-height:140px;
+  .list-filter-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+  }
+
+  .list-filter-header h4 {
+    font-size: 20px !important;
+  }
+  .list-filter-bottom {
+    width: 100%;
+    background: var(--base-pink);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .list-filter-bottom h5 {
+    margin: 10px 0px;
+    font-size: 12px;
+  }
+
+  .data-pelatihan--card-item {
+    width: 100%;
+    min-height: 140px;
     /* height:280px; */
-    overflow:hidden !important;
-    display:flex;
-    flex-direction:row;
-    padding:10px 5px;
-    gap:40px;
+    overflow: hidden !important;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 5px;
+    gap: 40px;
+  }
 
-} 
+  .data-pelatihan--card-item--img {
+    height: 140px;
+    width: 200px;
+  }
 
-
-    .data-pelatihan--card-item--img{ 
-    height:140px;
-    width:200px;
-    } 
-
-    #banner-pelatihan {
-    width:100% !imporant;
+  #banner-pelatihan {
+    width: 100% !imporant;
     /* height:220px; */
     /* background-image: url("/assets/img/banner-pelatihan-mobile.png"); */
-    }
+  }
 
+  #text-banner-pelatihan {
+    /* display:flex; */
+    width: 80% !important;
+    height: 200px;
+    /* margin:0px 0rem 0px 240px;    */
+    font-size: 24px !important;
+  }
 
-    #text-banner-pelatihan {
-        /* display:flex; */
-        width:80% !important;
-        height:200px;
-        /* margin:0px 0rem 0px 240px;    */
-        font-size:24px !important; 
-    }
+  #banner-pelatihan h3 {
+    font-size: 21px;
+  }
 
-     #banner-pelatihan h3 {
-        font-size:21px;
-     }
+  #banner-pelatihan h5 {
+    font-size: 14px;
+  }
 
-     #banner-pelatihan h5 {
-        font-size:14px;
-     }
+  #search-pelatihan {
+    margin-top: -20px;
+    margin-bottom: 60px;
+    width: 100%;
+  }
 
-   #search-pelatihan  {
-    margin-top:-20px;
-    margin-bottom:60px;
-    width:100%; 
-    }
+  #data-pelatihan {
+    width: 100%;
+    padding: 0px 0px;
+  }
 
+  .data-pelatihan--card {
+    width: 100%;
+  }
 
+  #data-pelatihan--filter {
+    display: none;
+  }
 
-    #data-pelatihan {
-     width:100%;
-     padding:0px 0px;
+  #data-pelatihan {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    width: 90%;
+    padding: 0px 0px;
+    gap: 10px;
+    margin: 0px 0px;
+    margin-top: -30px;
+  }
 
+  #data-pelatihan--filter-mobile {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .button-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 0px;
+    gap: 5px;
+    border: 1px solid lightgrey;
+    background: white;
+  }
+
+  .button-filter h5 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 10px 0px;
+  }
+
+  .button-filter img {
+    width: 24px !important;
+    height: 24px !important;
+    margin-top: 4px;
+  }
 }
 
- .data-pelatihan--card{
-     width:100%;
+@media (max-width: 540px) {
+  #search-pelatihan {
+    margin-top: -30px;
+  }
 
- }
-
-
-#data-pelatihan--filter {
-  display: none;
-
-    }
-
-    #data-pelatihan {
-    display:flex;
-     flex-direction:column;
-     justify-content:flex-start;
-     align-items:start;
-     width:90%;
-     padding:0px 0px;
-     gap:10px;
-    margin:0px 0px;
-    margin-top:-30px;
-}
-
-
- #data-pelatihan--filter-mobile {
-    display:flex;
-    overflow:hidden;
-    width:100%;
-    gap:10px;
-    }
-
-    .button-filter {
-        display:flex;
-        flex-direction:row;
-        justify-content:center;
-        align-items:center;
-        width:120px;
-        height:40px;
-        border-radius:10px;
-        padding:0px 0px;
-        gap:5px;
-        border:1px solid lightgrey;
-    }
-
-       .button-filter h5 {
-        font-size:14px;
-        line-height:20px;
-        margin:10px 0px;
-
-       }
-
-       .button-filter img {
-        width:24px !important;
-        height:24px !important;
-        margin-top:4px;
-       }
-}
-
-
-@media (max-width: 540px) { 
-
-     #search-pelatihan  {
-        margin-top:-30px;
-        }
-
-   #banner-pelatihan {
-      /* display:flex; */
-    width:100% !important;
+  #banner-pelatihan {
+    /* display:flex; */
+    width: 100% !important;
     /* height:220px; */
     /* background-image: url("/assets/img/banner-pelatihan-mobile.png"); */
-    }
+  }
 
+  #text-banner-pelatihan {
+    /* display:flex; */
+    width: 100% !important;
+    height: 200px;
+    /* margin:0px 0rem 0px 240px;    */
+    font-size: 14px;
+  }
 
-    #text-banner-pelatihan {
-        /* display:flex; */
-        width:100% !important;
-        height:200px;
-        /* margin:0px 0rem 0px 240px;    */
-        font-size:14px; 
-    }
+  #banner-pelatihan h3 {
+    font-size: 18px;
+  }
 
-     #banner-pelatihan h3 {
-        font-size:18px;
-     }
-
-      .data-pelatihan--card-item { 
-    width:23%;
-    min-height:280px;
+  .data-pelatihan--card-item {
+    width: 23%;
+    min-height: 280px;
     /* height:280px; */
-    overflow:hidden !important;
-    display:flex;
-    flex-direction:column;
-    gap:3px;
+    overflow: hidden !important;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     background-color: white;
-    padding:4px 5px;
-    border-radius:10px;
-    cursor:pointer;
-} 
+    padding: 4px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 
-    .data-pelatihan--card-item--img{ 
-    height:200px;
-    width:100%;
-    } 
+  .data-pelatihan--card-item--img {
+    height: 200px;
+    width: 100%;
+  }
 
+  .data-pelatihan--card-item {
+    width: 98%;
+  }
 
-   .data-pelatihan--card-item   {
-       width:98%;
-    }
+  #data-pelatihan--filter-mobile {
+    display: flex;
+  }
 
-    #data-pelatihan--filter-mobile {
-    display:flex;
-    }
-
- .data-pelatihan--card{
-     width:100%;
-
- }
+  .data-pelatihan--card {
+    width: 100%;
+  }
 }

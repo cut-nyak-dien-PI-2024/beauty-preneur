@@ -1,6 +1,6 @@
 const redirectLinks = {
     signIn: "sign-in.html",
-    pelatihan: "pelatihan.html"
+    pelatihan: "/index.html"
 }
 
 // Untuk Halaman Registrasi Akun

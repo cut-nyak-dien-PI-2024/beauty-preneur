@@ -1,20 +1,23 @@
-let getBody = document.getElementsByTagName("body")[0];
+/*=============== is User Login ?  ===============*/
 
-//dom change, close nav
-document.addEventListener("DOMContentLoaded", () => {
-  let getNavMobile = document.getElementById("container__header__mobile");
-  getNavMobile.style.display = "none";
-});
+const userData = localStorage.getItem("user");
+let getContainerNavbar = document.getElementById("nav__list");
+let getElementExit = document.getElementById("exit");
+let getElementSignIn = document.getElementById("signin");
+let getElementSignUp = document.getElementById("signup");
 
-let getMenuMobile = document.getElementById("btn-menu");
-let getCancel = document.getElementById("btn-cancel");
+if (userData !== null) {
+  getElementSignIn.style.display = "none";
+  getElementSignUp.style.display = "none";
+  getElementExit.style.display = "block";
+} else {
+  getElementSignIn.style.display = "block";
+  getElementSignUp.style.display = "block";
+  getElementExit.style.display = "none";
+}
 
-getMenuMobile.addEventListener("click", () => {
-  let getNavMobile = document.getElementById("container__header__mobile");
-  getNavMobile.style.display = "flex";
-});
-
-getCancel.addEventListener("click", () => {
-  let getNavMobile = document.getElementById("container__header__mobile");
-  getNavMobile.style.display = "none";
+getElementExit.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href = "/pelatihan-register-signin/sign-in.html";
+  localStorage.removeItem("user");
 });
